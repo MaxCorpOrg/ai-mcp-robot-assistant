@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "simple-tools": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["tools_simple.py"]
+    },
+    "email-tools": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["tools_email.py"],
+      "disabled": false
+    },
+    "remote-sse-server": {
+      "type": "sse",
+      "url": "https://api.example.com/sse",
+      "disabled": true
+    },
+    "remote-http-server": {
+      "type": "http",
+      "url": "https://api.example.com/mcp",
+      "disabled": true
+    }
+  }
+}

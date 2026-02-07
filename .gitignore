@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+**/.venv/
+
+# Secrets
+mcp_endpoint.txt
+mail_env.sh
+.env
+*.pem
+
+# Runtime artifacts
+*.log
+*.pid
+
+# Office lock files
+.~lock*
