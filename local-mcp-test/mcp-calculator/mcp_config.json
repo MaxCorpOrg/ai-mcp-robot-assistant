@@ -5,11 +5,19 @@
       "command": "python",
       "args": ["tools_simple.py"]
     },
+    "knowledge-tools": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["tools_knowledge.py"],
+      "env": {
+        "KB_ROOT": "/opt/ai_robot/shared/kb"
+      }
+    },
     "email-tools": {
       "type": "stdio",
       "command": "python",
       "args": ["tools_email.py"],
-      "disabled": false
+      "disabled": true
     },
     "remote-sse-server": {
       "type": "sse",

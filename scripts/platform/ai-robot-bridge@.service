@@ -1,0 +1,18 @@
+[Unit]
+Description=AI Robot MCP Bridge (%i)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/ai_robot/repo/local-mcp-test/mcp-calculator
+ExecStart=/opt/ai_robot/bin/run_robot_bridge.sh %i
+Restart=always
+RestartSec=3
+Environment=PYTHONUNBUFFERED=1
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

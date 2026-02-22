@@ -49,6 +49,7 @@ python mcp_pipe.py
 
 - `mcp_pipe.py`: Main communication pipe that handles WebSocket connections and process management | 处理WebSocket连接和进程管理的主通信管道
 - `calculator.py`: Example MCP tool implementation for mathematical calculations | 用于数学计算的MCP工具示例实现
+- `tools_knowledge.py`: Shared knowledge base tools for multi-robot setups | 多机器人共享知识库工具
 - `requirements.txt`: Project dependencies | 项目依赖
 
 ## Config-driven Servers | 通过配置驱动的服务
